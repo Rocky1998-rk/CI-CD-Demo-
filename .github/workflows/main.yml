@@ -7,10 +7,11 @@ on:
 jobs:
   build:
    runs-on: ubuntu-latest
+   
    steps:
-     - uses: action/checkout@v7
+     - uses: actions/checkout@v7
 
      - name: My first step
        run:  |
         echo "this is Mern Dev"
-        unane -a
+        uname -a

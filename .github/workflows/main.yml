@@ -1,0 +1,16 @@
+name: My CI/CD pipline GitHub Action
+
+on:
+  push:
+   branches: main
+   
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   steps:
+     - uses: action/checkout@v7
+
+     - name: My first step
+       run:  |
+        echo "this is Mern Dev"
+        unane -a
